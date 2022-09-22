@@ -15,16 +15,16 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: jnbofori/reverseproxy:latest
+      - image: jnbofori/reverseproxy:v3
         name: reverseproxy
         imagePullPolicy: Always
         resources:
           requests:
-            memory: "1000Mi"
-            cpu: "250m"
+            memory: "2000Mi"
+            cpu: "650m"
           limits:
-            memory: "2024Mi"
-            cpu: "500m"
+            memory: "4024Mi"
+            cpu: "800m"
         ports:
         - containerPort: 8080
       restartPolicy: Always
